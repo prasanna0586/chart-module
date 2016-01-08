@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="c3AngularChartApp">
+  <body ng-app="c3AngularChartApp" ng-controller = "chartCtrl">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content starts -->
-	<c3chart bindto-id="chart3"> 
+	<c3chart bindto-id="splineChart"> 
 		<chart-column column-id="x" column-values="Jul2015,Aug2015,Sep2015,Oct2015" />
-		<chart-column column-id="data1" column-name="Data 1" column-color="#5BA4B2" column-values="2921447.69,4371204.81,4140342.82,1088671.77" column-type="spline" />
+		<chart-column column-id="data1" column-name="Spline Chart" column-color="#5BA4B2" column-values="2921447.69,4371204.81,4140342.82,1088671.77" column-type="spline" />
 <!-- 		<chart-column column-id="data2" column-name="Data 2" column-color="green" column-values="50,20,10,40,15,25" column-type="line" /> 
 		<chart-column column-id="data3" column-name="Data 3" column-color="#000000" column-values="150,20,100,70,85,215" column-type="spline" /> -->
 		<chart-axes values-x="x" y="data1" />
@@ -31,10 +31,53 @@
 			<chart-axis-x axis-position="outer-center" axis-type="category">
 				<chart-axis-x-tick tick-rotate="50" />
 			</chart-axis-x>
-			<chart-axis-y axis-id="y" axis-position="outer-right" range-min="0">
-				<chart-axis-y-tick tick-count = "3"></chart-axis-y-tick>
+			<chart-axis-y axis-id="y" axis-position="outer-right">
+				<chart-axis-y-tick tick-count = "3" tick-values = "1457068.27, 2914136.54, 4371204.81"></chart-axis-y-tick><!-- This is highest value of y / 3 then y*2/3 and y*3/3 -->
 			</chart-axis-y> 
 		</chart-axis>
+		<chart-grid show-x="false" show-y="true">
+	</c3chart>
+	
+	<c3chart bindto-id="lineChart"> 
+		<chart-column column-id="x" column-values="Jul2015,Aug2015,Sep2015,Oct2015" />
+		<chart-column column-id="data1" column-name="Line Chart" column-color="#5BA4B2" column-values="2921447.69,4371204.81,4140342.82,1088671.77" column-type="line" />
+<!-- 		<chart-column column-id="data2" column-name="Data 2" column-color="green" column-values="50,20,10,40,15,25" column-type="line" /> 
+		<chart-column column-id="data3" column-name="Data 3" column-color="#000000" column-values="150,20,100,70,85,215" column-type="spline" /> -->
+		<chart-axes values-x="x" y="data1" />
+		<chart-axis>
+			<chart-axis-x axis-position="outer-center" axis-type="category">
+				<chart-axis-x-tick tick-rotate="50" />
+			</chart-axis-x>
+			<chart-axis-y axis-id="y" axis-position="outer-right">
+				<chart-axis-y-tick tick-count = "3" tick-values = "1457068.27, 2914136.54, 4371204.81"></chart-axis-y-tick><!-- This is highest value of y / 3 then y*2/3 and y*3/3 -->
+			</chart-axis-y>
+		</chart-axis>
+		<chart-grid show-x="false" show-y="true">
+	</c3chart>
+	
+	<c3chart bindto-id="barChart"> 
+		<chart-column column-id="x" column-values="Jul2015,Aug2015,Sep2015,Oct2015" />
+		<chart-column column-id="data1" column-name="Bar Chart" column-color="#5BA4B2" column-values="2921447.69,4371204.81,4140342.82,1088671.77" column-type="bar" />
+<!-- 		<chart-column column-id="data2" column-name="Data 2" column-color="green" column-values="50,20,10,40,15,25" column-type="line" /> 
+		<chart-column column-id="data3" column-name="Data 3" column-color="#000000" column-values="150,20,100,70,85,215" column-type="spline" /> -->
+		<chart-axes values-x="x" y="data1" />
+		<chart-axis>
+			<chart-axis-x axis-position="outer-center" axis-type="category">
+				<chart-axis-x-tick tick-rotate="50" />
+			</chart-axis-x>
+			<chart-axis-y axis-id="y" axis-position="outer-right">
+				<chart-axis-y-tick tick-count = "3" tick-values = "1457068.27, 2914136.54, 4371204.81"></chart-axis-y-tick><!-- This is highest value of y / 3 then y*2/3 and y*3/3 -->
+			</chart-axis-y>
+		</chart-axis>
+		<chart-grid show-x="false" show-y="true">
+	</c3chart>
+
+	<c3chart bindto-id="donutChart"> 
+		<chart-column column-id="Jul, 2015" column-values="2921447.69" column-type="donut" /> 
+		<chart-column column-id="Aug, 2015" column-values="4371204.81" column-type="donut" />
+		<chart-column column-id="Sep, 2015" column-values="4140342.82" column-type="donut" />
+		<chart-column column-id="Oct, 2015" column-values="1088671.77" column-type="donut" />
+		<chart-donut title="Donut" width="60" />
 	</c3chart>
 	<!-- Add your site or application content ends -->
 
