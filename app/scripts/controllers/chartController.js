@@ -21,12 +21,12 @@ angular.module('c3AngularChartApp').controller('chartCtrl', function ($scope) {
 		                       {"id": "data4", "type": "donut", "name": "Nov"}];*/
 	  
 	//Data for bar
-	$scope.chartData = [{"x": "Aug, 2015","data2":2921447.69},
+	$scope.chartData = [{"x": "Aug, 2015","data2":2921447.69, "data3": 1574897.80},
 	                    {"x": "Sep, 2015","data2":4371204.81}, 
 	                    {"x": "Oct, 2015","data2":4140342.82}, 
 	                    {"x":"Nov, 2015","data2":1088671.77}];
 	//Columns for bar
-	$scope.chartColumns = [{"id": "data2", "type": "bar", "name": "Sale_Amount"}];
+	$scope.chartColumns = [{"id": "data2", "type": "bar", "name": "Sale_Amount"},{"id": "data3", "type": "bar", "name": "Discount"}];
 	//X axis for bar
 	$scope.chartX = {"id": "x", "name": "Month"};
 
