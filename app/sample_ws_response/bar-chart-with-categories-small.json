@@ -1,0 +1,72 @@
+{
+	"error": false,
+	"statusCode": 200,
+	"response": {
+		"charts": [{
+			"chartData": {
+				"nodeValue": null,
+				"nodeLabel": "",
+				"axisType": "series",
+				"axis": [{
+					"nodeValue": null,
+					"nodeLabel": "Furniture",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "731132.24",
+						"nodeLabel": "Jul, 2015",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "1331203.64",
+						"nodeLabel": "Aug, 2015",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "1259481.53",
+						"nodeLabel": "Sep, 2015",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "345358.89",
+						"nodeLabel": "Oct, 2015",
+						"axisType": "",
+						"axis": []
+					}]
+				}, {
+					"nodeValue": null,
+					"nodeLabel": "Office Supplies",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "1786809.51",
+						"nodeLabel": "Jul, 2015",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "3040001.18",
+						"nodeLabel": "Aug, 2015",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "2880861.29",
+						"nodeLabel": "Sep, 2015",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "743312.87",
+						"nodeLabel": "Oct, 2015",
+						"axisType": "",
+						"axis": []
+					}]
+				}]
+			},
+			"chartId": "1452532176046",
+			"type": "bar"
+		}],
+		"storyTrackingId": "a5cc1655-8471-444b-8a3f-14313fff7815",
+		"queryInternalId": 557837215513660802,
+		"requestId": "65202538-8532-49d2-979d-4cd586e56ee2",
+		"userId": null,
+		"complete": true,
+		"progress": 1
+	}
+}
