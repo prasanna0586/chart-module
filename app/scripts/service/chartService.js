@@ -7,7 +7,7 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 			var chartArrayofObj = responseFromWebSocket.response.charts;
 			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX;
 			var data = new Array();
-			var chartColumns = new Array();
+			var columns = new Array();
 			for (var i = 0; i < chartArrayofObj.length; i++) {
 				chartID = chartArrayofObj[i].chartId;
 				chartType = chartArrayofObj[i].type;
@@ -22,12 +22,12 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 							for (var k = 0; k < chartAxis[j].axis.length; k++) {
 								chartDataObj[chartAxis[j].axis[k].nodeLabel] = chartAxis[j].axis[k].nodeValue;		
 								var chartColumnsObj = createChartColumnObj(chartAxis[j].axis[k], chartType);				
-								chartColumns.push(chartColumnsObj);
+								columns.push(chartColumnsObj);
 							}
 						} else {
 							chartDataObj[chartAxis[j].nodeLabel] = chartAxis[j].nodeValue;	
 							var chartColumnsObj = createChartColumnObj(chartAxis[j], chartType);
-							chartColumns.push(chartColumnsObj);
+							columns.push(chartColumnsObj);
 						}
 						data.push(chartDataObj);
 					}
@@ -37,7 +37,7 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 				}
 			}
 			chartObject.data = data;
-			chartObject.columns = chartColumns;
+			chartObject.columns = columns;
 			if (chartX) {
 				chartObject.xAxis = chartX;
 			}
