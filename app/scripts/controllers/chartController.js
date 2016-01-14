@@ -19,11 +19,11 @@ angular.module('c3AngularChartApp').controller('chartCtrl', ['$scope', 'chartSer
 		if (!_.isEmpty(chartObject)) {
 			$scope.chartData = chartObject.data;
 			$scope.chartColumns = chartObject.columns;
-			$scope.chartX = chartObject.xAxis
+			$scope.chartX = chartObject.xAxis;
 		}
 	};
 
-	$http.get('/sample_ws_response/bar-chart-with-categories-small.json').success(function (response) {
+	$http.get('/sample_ws_response/bar-chart-with-two-x-two-y.json').success(function (response) {
 		$scope.wsResponse = response;
 		$scope.onLoad($scope.wsResponse);
 	});

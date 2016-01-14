@@ -5,7 +5,7 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 		var chartObject = new Object();
 		if (responseFromWebSocket && responseFromWebSocket.response) {
 			var chartArrayofObj = responseFromWebSocket.response.charts;
-			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX;
+			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX, chartColumnsObj;
 			var data = new Array();
 			var columns = new Array();
 			for (var i = 0; i < chartArrayofObj.length; i++) {
@@ -21,18 +21,18 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 						if (chartAxis[j].axis && chartAxis[j].axis.length > 0) {
 							for (var k = 0; k < chartAxis[j].axis.length; k++) {
 								chartDataObj[chartAxis[j].axis[k].nodeLabel] = chartAxis[j].axis[k].nodeValue;		
-								var chartColumnsObj = createChartColumnObj(chartAxis[j].axis[k], chartType);				
+								chartColumnsObj = createChartColumnObj(chartAxis[j].axis[k], chartType);				
 								columns.push(chartColumnsObj);
 							}
 						} else {
 							chartDataObj[chartAxis[j].nodeLabel] = chartAxis[j].nodeValue;	
-							var chartColumnsObj = createChartColumnObj(chartAxis[j], chartType);
+							chartColumnsObj = createChartColumnObj(chartAxis[j], chartType);
 							columns.push(chartColumnsObj);
 						}
 						data.push(chartDataObj);
 					}
 				}
-				if (chartType != "donut") {
+				if (chartType !== "donut") {
 					chartX = {"id": "x"};
 				}
 			}
@@ -48,7 +48,6 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 	var createChartColumnObj = function (chartAxis, chartType) {
 		var chartColumnsObj = new Object();
 		var label = chartAxis.nodeLabel;
-		var value = chartAxis.nodeValue;
 
 		chartColumnsObj.id = label;
 		chartColumnsObj.type = chartType;

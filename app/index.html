@@ -83,13 +83,16 @@
 	<!-- chart-x is optional for donut chart -->
 	<c3chart bindto-id="chart-dynamic" chart-data="chartData" chart-columns="chartColumns" chart-x="chartX" padding-left = "200"> 
 		<chart-axis>
-			<chart-axis-x axis-type="category" />
+			<chart-axis-x axis-type="category">
+				<chart-axis-x-tick tick-culling-max = "7"></chart-axis-x-tick>
+			</chart-axis-x>
+			
 		</chart-axis>
 		<chart-axis-y>
 				<chart-axis-y-tick tick-count = "4" tick-format = "0.2f"></chart-axis-y-tick>
 		</chart-axis-y>
 		<chart-grid show-x="false" show-y="true">
-		<chart-size chart-height="300" chart-width="500" />
+		<chart-size chart-height="300" chart-width="1000" />
 		<chart-legend show-legend="false" />
 		<chart-tooltip group-tooltip = "false"/>
 	</c3chart>
