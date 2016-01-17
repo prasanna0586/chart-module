@@ -1,0 +1,37 @@
+{
+	"error": false,
+	"statusCode": 200,
+	"response": {
+		"charts": [{
+			"chartData": {
+				"nodeValue": null,
+				"nodeLabel": "",
+				"axisType": "categories",
+				"axis": [{
+					"nodeValue": "4507676.55",
+					"nodeLabel": "Furniture",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "10438121.57",
+					"nodeLabel": "Office Supplies",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "4226800.35",
+					"nodeLabel": "Technology",
+					"axisType": "",
+					"axis": []
+				}]
+			},
+			"chartId": "1453002603611",
+			"type": "donut"
+		}],
+		"storyTrackingId": "1cfd929a-096f-428a-90b7-e8938629d75e",
+		"queryInternalId": 2780357431972810370,
+		"requestId": "3d2f373d-0d6f-4545-933a-12155db229c7",
+		"userId": null,
+		"complete": true,
+		"progress": 1
+	}
+}

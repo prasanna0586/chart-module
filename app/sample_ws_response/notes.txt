@@ -1,0 +1,20 @@
+check loyalty points -> sale
+
+small
+
+one x -> product category
+two x -> product category and membership type
+
+one y -> sale amount
+two y -> sale amount, membership amount
+
+prd-name
+
+one x -> prd-name
+two x -> prd-name and product category 
+
+one y -> sale amount
+two y -> sale amount, membership amount
+
+
+first product category in x and first sale amount in y

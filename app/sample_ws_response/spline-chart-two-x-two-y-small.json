@@ -1,0 +1,97 @@
+{
+	"error": false,
+	"statusCode": 200,
+	"response": {
+		"charts": [{
+			"chartData": {
+				"nodeValue": null,
+				"nodeLabel": "",
+				"axisType": "series",
+				"axis": [{
+					"nodeValue": null,
+					"nodeLabel": "Furniture",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "235803365.97",
+						"nodeLabel": "Bronze",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "216936396.56",
+						"nodeLabel": "Gold",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "250351699.35",
+						"nodeLabel": "Platinium",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "219577635.57",
+						"nodeLabel": "Silver",
+						"axisType": "",
+						"axis": []
+					}]
+				}, {
+					"nodeValue": null,
+					"nodeLabel": "Office Supplies",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "482525051.07",
+						"nodeLabel": "Bronze",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "442184661.05",
+						"nodeLabel": "Gold",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "476644667.33",
+						"nodeLabel": "Platinium",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "468492403.07",
+						"nodeLabel": "Silver",
+						"axisType": "",
+						"axis": []
+					}]
+				}, {
+					"nodeValue": null,
+					"nodeLabel": "Technology",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "181267673.52",
+						"nodeLabel": "Bronze",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "160138832.92",
+						"nodeLabel": "Gold",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "190587276.55",
+						"nodeLabel": "Platinium",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "164565658.77",
+						"nodeLabel": "Silver",
+						"axisType": "",
+						"axis": []
+					}]
+				}]
+			},
+			"chartId": "1453002603611",
+			"type": "spline"
+		}],
+		"storyTrackingId": "1cfd929a-096f-428a-90b7-e8938629d75e",
+		"queryInternalId": 3493666853318443951,
+		"requestId": "304710c9-c933-4f88-9f2f-69a3134c841e",
+		"userId": null,
+		"complete": true,
+		"progress": 1
+	}
+}

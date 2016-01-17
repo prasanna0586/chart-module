@@ -2,10 +2,11 @@
 
 angular.module('c3AngularChartApp').service('chartService', function() {
 	this.getChartData = function (responseFromWebSocket) {
+		console.log('Enter service ' + new Date());
 		var chartObject = new Object();
 		if (responseFromWebSocket && responseFromWebSocket.response) {
 			var chartArrayofObj = responseFromWebSocket.response.charts;
-			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX, chartColumnsObj;
+			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX, chartColumnsObj, label;
 			var data = new Array();
 			var columns = new Array();
 			for (var i = 0; i < chartArrayofObj.length; i++) {
@@ -17,16 +18,20 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 					for (var j = 0; j < chartAxis.length; j++) {
 						var chartDataObj = new Object();
 						chartXAxis = chartAxis[j].nodeLabel;
-						chartDataObj.x = chartXAxis;
+						//chartDataObj.x = chartXAxis;
+						label = chartXAxis.replace(/"/g, '\\"');
+						chartDataObj.x = truncate(label);
 						if (chartAxis[j].axis && chartAxis[j].axis.length > 0) {
 							for (var k = 0; k < chartAxis[j].axis.length; k++) {
-								chartDataObj[chartAxis[j].axis[k].nodeLabel] = chartAxis[j].axis[k].nodeValue;		
-								chartColumnsObj = createChartColumnObj(chartAxis[j].axis[k], chartType);				
+								label = chartAxis[j].axis[k].nodeValue.replace(/"/g, '\\"');
+								chartDataObj["data"+k] = label;		
+								chartColumnsObj = createChartColumnObj(label, chartType, "data"+k);				
 								columns.push(chartColumnsObj);
 							}
 						} else {
-							chartDataObj[chartAxis[j].nodeLabel] = chartAxis[j].nodeValue;	
-							chartColumnsObj = createChartColumnObj(chartAxis[j], chartType);
+							label = chartAxis[j].nodeValue.replace(/"/g, '\\"')
+							chartDataObj["data"+j] = label;	
+							chartColumnsObj = createChartColumnObj(label, chartType, "data"+j);
 							columns.push(chartColumnsObj);
 						}
 						data.push(chartDataObj);
@@ -42,17 +47,25 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 				chartObject.xAxis = chartX;
 			}
 		}
+		console.log('Exit service ' + new Date());
 		return chartObject;
 	};
 	
-	var createChartColumnObj = function (chartAxis, chartType) {
+	var createChartColumnObj = function (chartAxisLabel, chartType, id) {
 		var chartColumnsObj = new Object();
-		var label = chartAxis.nodeLabel;
+//		var label = chartAxis.nodeLabel;
 
-		chartColumnsObj.id = label;
+		chartColumnsObj.id = id;
 		chartColumnsObj.type = chartType;
-		chartColumnsObj.name = label;
+		chartColumnsObj.name = chartAxisLabel;
 
 		return chartColumnsObj;
+	};
+	
+	var truncate = function (label) {
+		if (label && label.length > 12) {
+			label = label.slice(0,9)+"...";
+		}
+		return label;
 	};
 });
