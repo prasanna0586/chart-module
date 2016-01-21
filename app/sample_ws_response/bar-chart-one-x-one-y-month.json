@@ -1,0 +1,42 @@
+{
+	"error": false,
+	"statusCode": 200,
+	"response": {
+		"charts": [{
+			"chartData": {
+				"nodeValue": null,
+				"nodeLabel": "",
+				"axisType": "categories",
+				"axis": [{
+					"nodeValue": "2548839.42",
+					"nodeLabel": "Jul, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "9839057.19",
+					"nodeLabel": "Aug, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "8869792.06",
+					"nodeLabel": "Sep, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "2573620.73",
+					"nodeLabel": "Oct, 2015",
+					"axisType": "",
+					"axis": []
+				}]
+			},
+			"chartId": "1453303924655",
+			"type": "bar"
+		}],
+		"storyTrackingId": "019a275e-a470-4cdb-a615-28aa3108447c",
+		"queryInternalId": 8377380753929552941,
+		"requestId": "bdafc764-f776-4562-9bee-a285de2000fa",
+		"userId": null,
+		"complete": false,
+		"progress": 0.014478903577631649
+	}
+}

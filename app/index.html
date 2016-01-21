@@ -81,22 +81,25 @@
 
 	<!-- Code snippet for dynamic charts -->
 	<!-- chart-x is optional for donut chart -->
-	<c3chart bindto-id="chart-dynamic" chart-data="chartData" chart-columns="chartColumns" chart-x="chartX" padding-left = "200"> 
-		<chart-axis>
-			<chart-axis-x axis-type="category">
-				<chart-axis-x-tick tick-rotate = "50" tick-multiline = "false" tick-culling-max = "7"></chart-axis-x-tick>
-			</chart-axis-x>
-			
-		</chart-axis>
-		<chart-axis-y>
-				<chart-axis-y-tick tick-count = "4" tick-format = "0.2f"></chart-axis-y-tick>
-		</chart-axis-y>
-		<chart-grid show-x="false" show-y="true">
-		<chart-size chart-height="400" chart-width="800" />
-		<chart-legend show-legend="false" />
-		<chart-tooltip group-tooltip = "false"/>
-		<chart-bar ratio = "1" width = "10" />
-	</c3chart>
+	<div  class = "chartDiv">
+		<c3chart bindto-id="chart-dynamic" chart-data="chartData" chart-columns="chartColumns" chart-x="chartX" padding-left = "200"> 
+			<chart-axis>
+				<chart-axis-x axis-type="category">
+					<chart-axis-x-tick tick-rotate = "50" tick-multiline = "false" tick-culling-max = "7"></chart-axis-x-tick>
+				</chart-axis-x>
+				
+			</chart-axis>
+			<chart-axis-y>
+					<chart-axis-y-tick tick-count = "4" tick-format = "0.2f"></chart-axis-y-tick>
+			</chart-axis-y>
+			<chart-grid show-x="false" show-y="true">
+			<!-- <chart-size chart-height="400" chart-width="800" /> --> <!-- Width and height not needed. Takes from the parent element which is div -->
+			<chart-legend show-legend="false" />
+			<chart-tooltip group-tooltip = "false"/>
+			<chart-bar ratio = "1" width = "10" />
+			<chart-donut show-label = "false" title = "{{donutTitle}}" />
+		</c3chart>
+	</div>
 
 
 	<!-- Add your site or application content ends -->
@@ -106,7 +109,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/c3/c3.js"></script>
-    <script src="bower_components/c3-angular/c3-angular.min.js"></script>
+    <script src="bower_components/c3-angular/c3-angular.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <!-- endbower -->
     <!-- endbuild -->

@@ -14,16 +14,15 @@ angular.module('c3AngularChartApp').controller('chartCtrl', ['$scope', 'chartSer
 		$scope.chartColumns = new Array();
 		$scope.chartX = new Object();
 		var chartObject = chartService.getChartData(wsResponse);
-		console.log('chartObject from service ' + new Date());
-		console.log(JSON.stringify(chartObject));
 		if (!_.isEmpty(chartObject)) {
 			$scope.chartData = chartObject.data;
 			$scope.chartColumns = chartObject.columns;
 			$scope.chartX = chartObject.xAxis;
+			//$scope.donutTitle = chartObject.title;
 		}
 	};
 
-	$http.get('/sample_ws_response/spline-chart-two-x-two-y-small.json').success(function (response) {
+	$http.get('/sample_ws_response/line-chart-two-x-one-y-month.json').success(function (response) {
 		$scope.wsResponse = response;
 		$scope.onLoad($scope.wsResponse);
 	});

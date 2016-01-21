@@ -1,0 +1,102 @@
+{
+	"error": false,
+	"statusCode": 200,
+	"response": {
+		"charts": [{
+			"chartData": {
+				"nodeValue": null,
+				"nodeLabel": "",
+				"axisType": "series",
+				"axis": [{
+					"nodeValue": null,
+					"nodeLabel": "Jul, 2015",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "452832.74",
+						"nodeLabel": "Furniture",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "1138099.23",
+						"nodeLabel": "Office Supplies",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "509333.64",
+						"nodeLabel": "Technology",
+						"axisType": "",
+						"axis": []
+					}]
+				}, {
+					"nodeValue": null,
+					"nodeLabel": "Aug, 2015",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "2198955.67",
+						"nodeLabel": "Furniture",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "5044852.61",
+						"nodeLabel": "Office Supplies",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "2207221.28",
+						"nodeLabel": "Technology",
+						"axisType": "",
+						"axis": []
+					}]
+				}, {
+					"nodeValue": null,
+					"nodeLabel": "Sep, 2015",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "2003401.84",
+						"nodeLabel": "Furniture",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "4691712.06",
+						"nodeLabel": "Office Supplies",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "2102503.88",
+						"nodeLabel": "Technology",
+						"axisType": "",
+						"axis": []
+					}]
+				}, {
+					"nodeValue": null,
+					"nodeLabel": "Oct, 2015",
+					"axisType": "categories",
+					"axis": [{
+						"nodeValue": "565703.39",
+						"nodeLabel": "Furniture",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "1266403.02",
+						"nodeLabel": "Office Supplies",
+						"axisType": "",
+						"axis": []
+					}, {
+						"nodeValue": "531861.62",
+						"nodeLabel": "Technology",
+						"axisType": "",
+						"axis": []
+					}]
+				}]
+			},
+			"chartId": "1453414445072",
+			"type": "line"
+		}],
+		"storyTrackingId": "28bfa324-cb2e-4ce6-b87f-b21cbaf0946b",
+		"queryInternalId": 3528654432541033221,
+		"requestId": "7d0f23df-4c36-4021-a39c-59f9b8f97687",
+		"userId": null,
+		"complete": true,
+		"progress": 1
+	}
+}

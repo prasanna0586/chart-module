@@ -1,0 +1,407 @@
+{
+	"error": false,
+	"statusCode": 200,
+	"response": {
+		"charts": [{
+			"chartData": {
+				"nodeValue": null,
+				"nodeLabel": "",
+				"axisType": "categories",
+				"axis": [{
+					"nodeValue": "366010.97",
+					"nodeLabel": "Jul 24, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "314634.97",
+					"nodeLabel": "Jul 25, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "423764.71",
+					"nodeLabel": "Jul 26, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "328010.76",
+					"nodeLabel": "Jul 27, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "408511.88",
+					"nodeLabel": "Jul 28, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "441765",
+					"nodeLabel": "Jul 29, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "334012.09",
+					"nodeLabel": "Jul 30, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "264507.03",
+					"nodeLabel": "Jul 31, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "233631.16",
+					"nodeLabel": "Aug 01, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "424512.55",
+					"nodeLabel": "Aug 02, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "293762.15",
+					"nodeLabel": "Aug 03, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "564516.92",
+					"nodeLabel": "Aug 04, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "238258.15",
+					"nodeLabel": "Aug 05, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "236506.16",
+					"nodeLabel": "Aug 06, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "373511.71",
+					"nodeLabel": "Aug 07, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "153130.04",
+					"nodeLabel": "Aug 08, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "397760.97",
+					"nodeLabel": "Aug 09, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "395886.41",
+					"nodeLabel": "Aug 10, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "449138.21",
+					"nodeLabel": "Aug 11, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "235255.62",
+					"nodeLabel": "Aug 12, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "204632.34",
+					"nodeLabel": "Aug 13, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "272631.8",
+					"nodeLabel": "Aug 14, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "375137.41",
+					"nodeLabel": "Aug 15, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "395012.27",
+					"nodeLabel": "Aug 16, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "433764.04",
+					"nodeLabel": "Aug 17, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "194506.71",
+					"nodeLabel": "Aug 18, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "130879.16",
+					"nodeLabel": "Aug 19, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "262382.36",
+					"nodeLabel": "Aug 20, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "201506",
+					"nodeLabel": "Aug 21, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "183755.81",
+					"nodeLabel": "Aug 22, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "288384.85",
+					"nodeLabel": "Aug 23, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "285259.75",
+					"nodeLabel": "Aug 24, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "442386.55",
+					"nodeLabel": "Aug 25, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "327135.38",
+					"nodeLabel": "Aug 26, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "325385.87",
+					"nodeLabel": "Aug 27, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "306383.9",
+					"nodeLabel": "Aug 28, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "456265.03",
+					"nodeLabel": "Aug 29, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "347635.51",
+					"nodeLabel": "Aug 30, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "387387.72",
+					"nodeLabel": "Aug 31, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "354512.22",
+					"nodeLabel": "Sep 01, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "440264.36",
+					"nodeLabel": "Sep 02, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "194631.76",
+					"nodeLabel": "Sep 03, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "259633.66",
+					"nodeLabel": "Sep 04, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "167256.15",
+					"nodeLabel": "Sep 05, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "501140.72",
+					"nodeLabel": "Sep 06, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "306009.98",
+					"nodeLabel": "Sep 07, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "291635",
+					"nodeLabel": "Sep 08, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "210632.43",
+					"nodeLabel": "Sep 09, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "339510.74",
+					"nodeLabel": "Sep 10, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "200631.86",
+					"nodeLabel": "Sep 11, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "368512.05",
+					"nodeLabel": "Sep 12, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "79128",
+					"nodeLabel": "Sep 13, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "374637.19",
+					"nodeLabel": "Sep 14, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "328385.91",
+					"nodeLabel": "Sep 15, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "504764.8",
+					"nodeLabel": "Sep 16, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "284509.42",
+					"nodeLabel": "Sep 17, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "207754.96",
+					"nodeLabel": "Sep 18, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "204631.1",
+					"nodeLabel": "Sep 19, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "340886.33",
+					"nodeLabel": "Sep 20, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "345760.95",
+					"nodeLabel": "Sep 21, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "353387.98",
+					"nodeLabel": "Sep 22, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "303008.7",
+					"nodeLabel": "Sep 23, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "476391.24",
+					"nodeLabel": "Sep 24, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "224257.09",
+					"nodeLabel": "Sep 25, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "338510.31",
+					"nodeLabel": "Sep 26, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "300385.05",
+					"nodeLabel": "Sep 27, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "255132.96",
+					"nodeLabel": "Sep 28, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "329636.45",
+					"nodeLabel": "Sep 29, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "392886.36",
+					"nodeLabel": "Sep 30, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "291133.55",
+					"nodeLabel": "Oct 01, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "325633.49",
+					"nodeLabel": "Oct 02, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "469264.42",
+					"nodeLabel": "Oct 03, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "261759.56",
+					"nodeLabel": "Oct 04, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "226509.29",
+					"nodeLabel": "Oct 05, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "469889.69",
+					"nodeLabel": "Oct 06, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "368635.86",
+					"nodeLabel": "Oct 07, 2015",
+					"axisType": "",
+					"axis": []
+				}, {
+					"nodeValue": "314511.15",
+					"nodeLabel": "Oct 08, 2015",
+					"axisType": "",
+					"axis": []
+				}]
+			},
+			"chartId": "1453304434206",
+			"type": "bar"
+		}],
+		"storyTrackingId": "062ba11f-7d89-45e1-a767-24a6c9857fdb",
+		"queryInternalId": 1807380307058049154,
+		"requestId": "e1518a0b-2f22-40e2-b601-6bc055c7214b",
+		"userId": null,
+		"complete": false,
+		"progress": 0.008076580128370462
+	}
+}

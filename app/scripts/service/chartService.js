@@ -2,11 +2,10 @@
 
 angular.module('c3AngularChartApp').service('chartService', function() {
 	this.getChartData = function (responseFromWebSocket) {
-		console.log('Enter service ' + new Date());
 		var chartObject = new Object();
 		if (responseFromWebSocket && responseFromWebSocket.response) {
 			var chartArrayofObj = responseFromWebSocket.response.charts;
-			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX, chartColumnsObj, label;
+			var chartID, chartData, chartType, chartAxis, chartXAxis, chartX, chartColumnsObj, label, name, title = 0;
 			var data = new Array();
 			var columns = new Array();
 			for (var i = 0; i < chartArrayofObj.length; i++) {
@@ -20,18 +19,23 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 						chartXAxis = chartAxis[j].nodeLabel;
 						//chartDataObj.x = chartXAxis;
 						label = chartXAxis.replace(/"/g, '\\"');
+						if (chartType === 'donut') {
+							title = title + parseInt(chartAxis[j].nodeValue);
+						}
 						chartDataObj.x = truncate(label);
 						if (chartAxis[j].axis && chartAxis[j].axis.length > 0) {
 							for (var k = 0; k < chartAxis[j].axis.length; k++) {
 								label = chartAxis[j].axis[k].nodeValue.replace(/"/g, '\\"');
+								name = chartAxis[j].axis[k].nodeLabel.replace(/"/g, '\\"');
 								chartDataObj["data"+k] = label;		
-								chartColumnsObj = createChartColumnObj(label, chartType, "data"+k);				
+								chartColumnsObj = createChartColumnObj(name, chartType, "data"+k);				
 								columns.push(chartColumnsObj);
 							}
 						} else {
-							label = chartAxis[j].nodeValue.replace(/"/g, '\\"')
+							label = chartAxis[j].nodeValue.replace(/"/g, '\\"');
+							name = chartAxis[j].nodeLabel.replace(/"/g, '\\"');
 							chartDataObj["data"+j] = label;	
-							chartColumnsObj = createChartColumnObj(label, chartType, "data"+j);
+							chartColumnsObj = createChartColumnObj(name, chartType, "data"+j);
 							columns.push(chartColumnsObj);
 						}
 						data.push(chartDataObj);
@@ -43,11 +47,15 @@ angular.module('c3AngularChartApp').service('chartService', function() {
 			}
 			chartObject.data = data;
 			chartObject.columns = columns;
+			
 			if (chartX) {
 				chartObject.xAxis = chartX;
 			}
+			
+			if (title) {
+				chartObject.title = title;
+			}
 		}
-		console.log('Exit service ' + new Date());
 		return chartObject;
 	};
 	
